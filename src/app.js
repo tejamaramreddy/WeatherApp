@@ -4,6 +4,7 @@ const app = express()
 const hbs = require('hbs')
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
+const port = process.env.PORT || 3003
 const publicDirectoryPath = path.join(__dirname,'../public')
 app.use(express.static(publicDirectoryPath))
 const views = path.join(__dirname,'../views')
@@ -65,7 +66,7 @@ app.get('/weather',(req,res)=>{
 app.get('*',(req,res)=>{
     res.send('<h1 align="center">404 Page Not found</h1>')
 })
-app.listen(3003,()=>{
+app.listen(port,()=>{
 
-    console.log('Server is up and running in port 3003')
+    console.log('Server is up and running in port '+ port)
 })
