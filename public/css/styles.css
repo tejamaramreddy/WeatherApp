@@ -1,0 +1,48 @@
+body{
+    color: #333333;
+    font-family: arial;
+    max-width: 270px;
+    margin: 0 auto;
+    padding: 16px;
+
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.main-container{
+    flex-grow: 1;
+}
+footer{
+    color: #88888888;
+    border-top: 1px solid #eeeeeeee;
+    margin-top: 16px;
+    padding: 16px 0;
+}
+header{
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+h1{
+    font-size: 64;
+    margin-bottom: 16px;
+}
+header a{
+    text-decoration: none;
+    color: #88888888;
+    margin-right: 16px;
+}
+img{
+    width: 350px;
+}
+input{
+    border: 1px solid #88888888;
+    padding: 8px;
+}
+button{
+    cursor: pointer;
+    border: 1px soid #88888888;
+    background: #88888888;
+    color: white;
+    padding: 8px;
+}
